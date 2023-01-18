@@ -46,6 +46,7 @@ class Map{
     mymap['$']='$'; // Goal
     mymap['1']='H'; // Door to room 1
     mymap['2']='H'; // Door to room 2
+    mymap['3']='H'; // Door to room 3
 
     for (int i = 0; i < 16; i++){
       for (int j = 0; j < 32; j++){
@@ -88,6 +89,9 @@ class Actor{
       return false;
     case '2':
       current_level="2";
+      return false;
+    case '3':
+      current_level="3";
       return false;
     default:
       return false;
